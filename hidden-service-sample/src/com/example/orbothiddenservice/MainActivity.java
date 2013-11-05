@@ -1,5 +1,6 @@
 package com.example.orbothiddenservice;
 
+import ru.dtlbox.CustomOrbotHelper;
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
@@ -10,6 +11,12 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+		
+	}
+	
+	protected void startTorService(){
+		CustomOrbotHelper.setContext(getApplicationContext());
+		CustomOrbotHelper.getInstance().torServiceStartAsync(this);
 	}
 
 	@Override
