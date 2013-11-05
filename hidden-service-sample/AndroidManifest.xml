@@ -22,6 +22,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <service
+            android:name="ru.dtlbox.CustomTorService"
+            android:enabled="true"
+            android:exported="false"
+            android:process=":remote" >
+            <intent-filter>
+                <action android:name="ru.dtlbox.TOR_SERVICE" />
+            </intent-filter>
+        </service>
     </application>
 
 </manifest>
