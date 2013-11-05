@@ -1,6 +1,3 @@
-[submodule "external/orbot"]
-	path = external/orbot
-	url = https://github.com/prive/orbot.git
 [submodule "external/OnionKit"]
 	path = external/OnionKit
 	url = https://github.com/guardianproject/OnionKit.git
